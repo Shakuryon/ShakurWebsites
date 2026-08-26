@@ -1467,18 +1467,16 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 
 .pricing-topper {
     margin-bottom: 1rem;
-
     font-family: var(--font-tertiary);
-
     font-size: 1rem;
 
     letter-spacing: 0.15rem;
 
-    color: var(--tertiary-color);
+    color: var(--hover-color);
 
     text-shadow:
         2px 2px 0 #000,
-        0 0 12px var(--tertiary-color);
+        0 0 12px var(--hover-color);
 }
 
 
@@ -1507,11 +1505,11 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 .pricing-highlight {
     display: block;
 
-    color: var(--tertiary-color);
+    color: var(--tertiary-theme-color);
 
     text-shadow:
         3px 3px 0 #000,
-        0 0 15px var(--tertiary-color);
+        0 0 15px var(--tertiary-theme-color);
 }
 
 
@@ -1528,82 +1526,6 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
         2px 2px 3px #000;
 }
 
-
-/* ==== Header Badge ==== */
-
-.pricing-header-badge {
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 0.8rem;
-
-    min-width: 150px;
-    min-height: 150px;
-
-    padding: 1.5rem;
-
-    border: 3px solid var(--tertiary-color);
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(255,0,0,0.25),
-            rgba(0,0,0,0.75)
-        );
-
-    box-shadow:
-        0 0 15px rgba(255,0,0,0.4),
-        inset 0 0 20px rgba(255,0,0,0.2);
-
-    transform: rotate(8deg);
-
-    transition:
-        transform 0.4s ease,
-        box-shadow 0.4s ease;
-}
-
-
-.pricing-header-badge:hover {
-    transform:
-        rotate(-5deg)
-        scale(1.08);
-
-    box-shadow:
-        0 0 20px var(--tertiary-color),
-        0 0 40px rgba(255,0,0,0.35),
-        inset 0 0 25px rgba(255,0,0,0.3);
-}
-
-
-.pricing-badge-star {
-    color: var(--hover-color);
-
-    font-size: 2rem;
-
-    text-shadow:
-        0 0 10px var(--hover-color);
-}
-
-
-.pricing-badge-text {
-    font-family: var(--font-tertiary);
-
-    font-size: 0.55rem;
-
-    line-height: 1.7;
-
-    text-align: center;
-
-    color: var(--mono-color);
-
-    text-shadow:
-        2px 2px 0 #000;
-}
 
 
 /* ==== Card Group ==== */
@@ -1690,7 +1612,7 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 /* ==== Maintenance Card ==== */
 
 .maintenance-card {
-    border-color: var(--tertiary-color);
+    border-color: var(--tertiary-theme-color);
 
     background:
         linear-gradient(
