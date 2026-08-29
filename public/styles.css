@@ -4,7 +4,7 @@
     --secondary-theme-color: #5dfb86;
     --secondary-dark-color: #001a07;
     --tertiary-theme-color: #d12120;
-    --tertiary-dark-color: #220000;
+    --tertiary-dark-color: #420000;
 
     --bg-gradient1: rgba(0, 9, 44, 0.829);
     --bg-gradient2: rgba(0, 48, 204, 0.55);
@@ -52,6 +52,15 @@
     border: 3px solid var(--mono-color);
   }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+
+}
+
 /* ==== Fonts & Background(s) ==== */
 h1, h2, h3 {
     font-family: var(--font-heading);
@@ -67,6 +76,7 @@ body {
     background-attachment: fixed;
     color: var(--mono-color);
 }
+
 
 /* Green Gradient Background on Hover */
 body::before { 
@@ -121,6 +131,7 @@ hr {
     top: 0;
     opacity: 1;
     z-index: 10;
+    width: 100%; 
 }
 
 #navbarCont {
@@ -133,6 +144,7 @@ hr {
     padding: 0.25rem 0rem;
     border: 3px solid var(--accent-color);
     border-top: none; 
+     
 }
 
 
@@ -908,7 +920,7 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 }
 
 
-.services-button {
+.services-button, .about-button {
     display: block;
 
     padding: 1rem 2rem;
@@ -950,7 +962,7 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 }
 
 
-.services-button:hover {
+.services-button:hover, .about-button:hover {
     transform: scale(1.08);
 
     border-color: var(--mono-color);
@@ -1446,7 +1458,7 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 
 #pricingSection {
     position: relative;
-    padding-top: 6rem;
+    padding-top: 8rem;
 
     overflow: hidden;
 }
@@ -2113,7 +2125,7 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
             #020817
         );
 
-    border-radius: 25px;
+    border-radius: 5% 5% 0px 0px;
     color: var(--mono-color);
 }
 
@@ -2775,20 +2787,13 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 
 
 #contactSection {
-
     position: relative;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     width: 100%;
-
     padding: 8rem 0;
-
     overflow: hidden;
-
 
 }
 
@@ -2841,32 +2846,20 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 
 /* ==== Topper ==== */
 
-.contact-topper {
-
+.contact-topper, .about-topper {
     width: fit-content;
-
     margin-bottom: 1rem;
-
     padding: 0.45rem 1rem;
-
     border: 2px solid var(--hover-color);
-
     border-radius: 5px;
-
     font-family: var(--font-heading);
-
     font-size: 0.8rem;
     font-weight: 700;
-
     letter-spacing: 0.12rem;
-
     text-transform: uppercase;
-
     color: var(--hover-color);
-
     background-color:
         rgba(254,222,1,0.08);
-
     box-shadow:
         3px 3px 0 var(--ohno-color);
 
@@ -2876,21 +2869,13 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 /* ==== Main Title ==== */
 
 .contact-title {
-
     margin: 0;
-
     font-family: var(--font-heading);
-
-    font-size: clamp(2.8rem, 5vw, 4.8rem);
-
+    font-size: 4.8rem;
     font-weight: 700;
-
     line-height: 0.95;
-
     text-transform: uppercase;
-
     color: var(--mono-color);
-
     text-shadow:
         4px 4px 0 var(--ohno-color);
 
@@ -2912,14 +2897,14 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 
     margin: 2rem 0;
 
+    text-shadow:
+        2px 2px 3px #000;
     font-family: var(--font-body);
 
-    font-size: 0.95rem;
+    font-size: 1rem;
 
     line-height: 1.8;
-
-    color:
-        rgba(255,255,255,0.78);
+    color: var(--mono-color);
 
 }
 
@@ -3556,4 +3541,444 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
     }
 
 }
+
+
+/* =======================================
+   ABOUT SECTION
+======================================= */
+
+#aboutSection {
+    position: relative;
+    overflow: hidden;
+    padding: 8rem 5%;
+    background: linear-gradient(
+        180deg,
+        var(--dark-theme-color) 0%,
+        var(--theme-color) 65%,
+        var(--dark-theme-color) 100%
+    );
+    isolation: isolate;
+    border: 3px solid var(--mono-color);
+    margin-top: 3rem; 
+    border-radius: 25px;
+}
+
+
+/* =======================================
+   ABOUT CONTAINER
+======================================= */
+
+.about-container {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    gap: 90px;
+
+}
+
+
+/* =======================================
+   IMAGE GROUP
+======================================= */
+
+.about-image-group {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48%;
+    min-height: 600px;
+}
+
+
+/* =======================================
+   MAIN / ALMA MATER IMAGE
+======================================= */
+
+.about-main-image {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 78%;
+    height: 570px;
+
+    overflow: hidden;
+
+    border: 5px solid var(--hover-color);
+    border-radius: 8px;
+
+    box-shadow:
+        11px 11px 0 var(--dark-theme-color),
+        0 0 30px rgba(0, 0, 0, 0.35);
+
+    transform: rotate(-2deg);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.about-main-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(10, 46, 166, 0.18),
+            transparent 60%
+        );
+
+    pointer-events: none;
+}
+
+
+.about-main-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.6s ease;
+}
+
+
+.about-main-image:hover {
+    transform: rotate(0deg) translateY(-6px);
+
+    box-shadow:
+        14px 14px 22px var(--secondary-theme-color),
+        0 0 35px var(--accent-color);
+}
+
+
+.about-main-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =======================================
+   PROFILE IMAGE
+======================================= */
+
+.about-profile-image {
+    position: absolute;
+
+    right: 0;
+    bottom: 20px;
+
+    width: 52%;
+    height: 390px;
+
+    overflow: hidden;
+
+    border: 7px solid var(--dark-theme-color);
+    border-radius: 8px;
+
+    background: var(--theme-color);
+
+    box-shadow:
+        11px 11px 0 var(--hover-color),
+        0 0 30px rgba(0, 0, 0, 0.35);
+
+    transform: rotate(3deg);
+
+    z-index: 2;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.about-profile-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.about-profile-image:hover {
+    transform: rotate(0deg) translateY(-8px);
+
+    box-shadow:
+        14px 14px 22px var(--tertiary-theme-color),
+        0 0 35px var(--hover-color);
+}
+
+
+/* =======================================
+   CONTENT
+======================================= */
+
+.about-content {
+    width: 52%;
+    max-width: 620px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.about-title {
+    margin: 0;
+    color: var(--mono-color);
+    font-family: var(--font-heading);
+    font-size: clamp(42px, 5vw, 70px);
+    font-weight: 700;
+    line-height: 0.95;
+    text-shadow:
+        4px 4px 0 var(--ohno-color);
+    text-transform: uppercase;
+}
+
+
+.about-title span {
+    color: var(--hover-color);
+
+    text-shadow:
+        4px 4px 0 var(--ohno-color);
+}
+
+
+
+.about-text {
+    margin: 1.3rem 0;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-family: var(--font-body);
+    font-size: 1rem;
+    text-shadow:
+        2px 2px 3px #000;
+    line-height: 1.8;
+}
+
+.about-text span a {
+    color: var(--hover-color);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.about-text span a:hover {
+    color: var(--tertiary-theme-color)
+}
+
+
+/* =======================================
+   BUTTON
+======================================= */
+
+.about-button {
+    background:
+        linear-gradient(
+            180deg,
+            #ff9393 0%,
+            #f62929 40%,
+            var(--tertiary-theme-color) 100%
+        );
+
+    border-color: var(--tertiary-dark-color);
+}
+
+
+.about-button:hover {
+
+}
+
+
+/* =======================================
+   SONIC-STYLE BACKGROUND
+======================================= */
+
+.about-background {
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* =======================================
+   SUN
+======================================= */
+
+.about-sun {
+    position: absolute;
+
+    top: 8%;
+    right: 8%;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: var(--hover-color);
+
+    box-shadow:
+        0 0 50px rgba(254, 222, 1, 0.35);
+}
+
+
+/* =======================================
+   CLOUDS
+======================================= */
+
+.about-cloud {
+    position: absolute;
+
+    width: 180px;
+    height: 45px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    filter: blur(1px);
+}
+
+
+.about-cloud::before,
+.about-cloud::after {
+    content: "";
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: inherit;
+}
+
+
+.about-cloud::before {
+    width: 75px;
+    height: 75px;
+
+    left: 30px;
+    bottom: 5px;
+}
+
+
+.about-cloud::after {
+    width: 55px;
+    height: 55px;
+
+    right: 30px;
+    bottom: 5px;
+}
+
+
+.cloud-one {
+    top: 18%;
+    left: -40px;
+}
+
+
+.cloud-two {
+    top: 40%;
+    right: -60px;
+
+    transform: scale(0.75);
+}
+
+
+/* =======================================
+   HILLS
+======================================= */
+
+.hill-one,
+.hill-two {
+    position: absolute;
+
+    bottom: -160px;
+
+    width: 750px;
+    height: 330px;
+
+    border-radius: 50% 50% 0 0;
+
+    background: var(--hover-color);
+
+    opacity: 0.9;
+}
+
+
+.hill-one {
+    left: -180px;
+
+    transform: rotate(-7deg);
+}
+
+
+.hill-two {
+    right: -200px;
+
+    transform: rotate(7deg);
+}
+
+
+/* =======================================
+   DECORATIVE RINGS
+======================================= */
+
+.about-background::before {
+    content: "";
+
+    position: absolute;
+
+    left: 5%;
+    bottom: 12%;
+
+    width: 80px;
+    height: 80px;
+
+    border: 8px solid var(--mono-color);
+    border-radius: 50%;
+
+    opacity: 0.9;
+}
+
+
+.about-background::after {
+    content: "";
+
+    position: absolute;
+
+    right: 20%;
+    bottom: 8%;
+
+    width: 45px;
+    height: 45px;
+
+    border: 5px solid var(--mono-color);
+    border-radius: 50%;
+
+    opacity: 0.9;
+}
+
+
 
