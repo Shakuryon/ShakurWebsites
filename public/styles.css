@@ -499,7 +499,6 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 
 #servicesSection {
     margin-top: 12rem;
-    padding-top: 8rem;
     border-top: 30px dotted var(--hover-color); 
     overflow: hidden;
 }
