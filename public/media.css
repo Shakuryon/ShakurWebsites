@@ -9,6 +9,7 @@
 
 @media screen and (max-width: 1450px) {
 
+    body {overflow-x:hidden}
     /* ===== Navigation ===== */
 
     .left-side-container {
@@ -43,21 +44,21 @@
 
     .inner-Hframe {
         width: 580px;
-        height: 381px;
+   
     }
 
     .banner {
-        width: 14.2rem;
         font-size: 1rem;
         padding: 0.7rem 1.4rem;
+        width: 11rem;
     }
 
     .Utagline {
-        font-size: 1.35rem;
+        font-size: 1.15rem;
     }
 
     .Ltagline {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
 
@@ -105,6 +106,9 @@
 
 @media screen and (max-width: 1200px) {
 
+    * {
+        outline: 2px solid red;
+    }
     /* ===== Navigation ===== */
 
     .navbar-container {
@@ -454,10 +458,6 @@
 @media screen and (max-width: 768px) {
 
     /* ===== Navigation ===== */
-
-    #navbarSection {
-        width: 100%;
-    }
 
     .navbar-container {
         width: 100%;
@@ -1318,3 +1318,233 @@
     }
 
 }
+
+/* ==================================================================== */
+/* ======================================= */
+/* ==== PRIVACY POLICY MOBILE ==== */
+/* ======================================= */
+
+@media (max-width: 768px) {
+
+    #privacySection {
+
+        padding:
+            5rem 0 6rem;
+    }
+
+
+    .privacy-container {
+
+        width: 88%;
+    }
+
+
+    .privacy-header {
+
+        margin-bottom: 3rem;
+        padding-bottom: 1.5rem;
+    }
+
+
+    .privacy-title {
+
+        font-size: 3rem;
+    }
+
+
+    .privacy-updated {
+
+        font-size: 0.72rem;
+    }
+
+
+    .privacy-content {
+
+        gap: 2.5rem;
+    }
+
+
+    .privacy-block {
+
+        gap: 0.85rem;
+
+        padding-bottom: 2rem;
+    }
+
+
+    .privacy-block h2 {
+
+        font-size: 1.35rem;
+    }
+
+
+    .privacy-block p {
+
+        font-size: 0.82rem;
+        line-height: 1.8;
+    }
+
+
+    .privacy-block li {
+
+        font-size: 0.8rem;
+    }
+
+
+    .privacy-contact-details {
+
+        padding: 1rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .privacy-title {
+
+        font-size: 2.5rem;
+    }
+
+
+    .privacy-label {
+
+        font-size: 0.65rem;
+    }
+
+
+    .privacy-block h2 {
+
+        font-size: 1.2rem;
+    }
+
+}
+
+/* ======================================= */
+/* ==== TERMS OF USE MOBILE ==== */
+/* ======================================= */
+
+@media (max-width: 768px) {
+
+ 
+#termsSection {
+
+    padding:
+        5rem 0 6rem;
+}
+
+
+.terms-container {
+
+    width: 88%;
+}
+
+
+.terms-header {
+
+    margin-bottom: 3rem;
+
+    padding-bottom: 1.5rem;
+}
+
+
+.terms-title {
+
+    font-size: 3rem;
+}
+
+
+.terms-updated {
+
+    font-size: 0.72rem;
+}
+
+
+.terms-content {
+
+    gap: 2.5rem;
+}
+
+
+.terms-block {
+
+    gap: 0.85rem;
+
+    padding-bottom: 2rem;
+}
+
+
+.terms-block h2 {
+
+    font-size: 1.35rem;
+}
+
+
+.terms-block p {
+
+    font-size: 0.82rem;
+
+    line-height: 1.8;
+}
+
+
+.terms-contact-details {
+
+    padding: 1rem;
+}
+
+
+.terms-note {
+
+    align-items: flex-start;
+
+    padding: 1rem;
+}
+
+
+.terms-note-icon {
+
+    width: 36px;
+    height: 36px;
+
+    font-size: 1rem;
+}
+
+
+.terms-note-title {
+
+    font-size: 0.75rem;
+}
+
+
+.terms-note-content p {
+
+    font-size: 0.75rem;
+}
+ 
+
+}
+
+@media (max-width: 480px) {
+
+ 
+.terms-title {
+
+    font-size: 2.5rem;
+}
+
+
+.terms-label {
+
+    font-size: 0.65rem;
+}
+
+
+.terms-block h2 {
+
+    font-size: 1.2rem;
+}
+ 
+
+}
+
