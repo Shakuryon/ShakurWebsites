@@ -33,18 +33,16 @@
     /* ===== Hero ===== */
 
     #heroSection {
-      padding-top: 10rem;
+      padding-top: 7.5rem;
     }
     
     .hero-container {
         gap: 0rem;
     }
 
-
-
     .inner-Hframe {
         width: 580px;
-   
+        height: 350px;
     }
 
     .banner {
@@ -106,10 +104,8 @@
 
 @media screen and (max-width: 1200px) {
 
-    * {
-        outline: 2px solid red;
-    }
     /* ===== Navigation ===== */
+    
 
     .navbar-container {
         justify-content: space-around;
@@ -138,18 +134,19 @@
 
     /* ===== Hero ===== */
 
-    #heroSection {
-        padding-top: 10rem;
-    }
+
 
     .hero-container {
-        gap: 2rem;
+        gap: rem;
     }
     
+    .main-hero {
+        width: 45%; 
+    }
 
     .inner-Hframe {
-        width: 580px;
-        height: 380px;
+        width: 430px;
+        height: 270px;
     }
 
     .banner {
@@ -164,13 +161,15 @@
     }
 
     .Utagline {
-        font-size: 1.35rem;
+        font-size: 1rem;
         text-align: center;
     }
 
     .Ltagline {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         text-align: center;
+        overflow: hidden;
+        width: 150%; 
     }
 
 
@@ -281,7 +280,7 @@
     /* ===== Hero ===== */
 
     #heroSection {
-        padding-top: 13rem;
+        padding-top: 12rem;
     }
 
     .hero-container {
