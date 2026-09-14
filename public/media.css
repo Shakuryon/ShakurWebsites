@@ -95,6 +95,32 @@
         gap: 2rem;
     }
 
+        /* ===== About ===== */
+
+    .aboutSection {
+        padding: 7rem 4%;
+    }
+
+    .about-container {
+        gap: 50px;
+    }
+
+    .about-image-group {
+        min-height: 560px;
+    }
+
+    .about-main-image {
+        height: 520px;
+    }
+
+    .about-profile-image {
+        height: 350px;
+    }
+
+    .about-title {
+        font-size: 60px;
+    }
+
 }
 
 
@@ -137,7 +163,7 @@
 
 
     .hero-container {
-        gap: rem;
+        gap: 0rem;
     }
     
     .main-hero {
@@ -237,6 +263,56 @@
         font-size: 3.5rem;
     }
 
+    /* ===== About ===== */
+
+    #aboutSection {
+        padding: 6rem 4%;
+        margin: 2.5rem;
+    }
+
+    .about-container {
+        gap: 35px;
+    }
+
+    .about-image-group {
+        width: 48%;
+        min-height: 500px;
+    }
+
+    .about-main-image {
+        width: 82%;
+        height: 470px;
+    }
+
+    .about-profile-image {
+        width: 55%;
+        height: 315px;
+        bottom: 10px;
+    }
+
+    .about-content {
+        width: 52%;
+    }
+
+    .about-title {
+        font-size: 52px;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+
+    .about-sun {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hill-one,
+    .hill-two {
+        width: 600px;
+        height: 280px;
+    }
 }
 
 
@@ -280,7 +356,7 @@
     /* ===== Hero ===== */
 
     #heroSection {
-        padding-top: 12rem;
+        padding-top: 9rem;
     }
 
     .hero-container {
@@ -291,7 +367,7 @@
 
     .main-hero {
         order: 1;
-        width: 100%;
+        width: 45%;
     }
 
     .Lbanner-set {
@@ -303,19 +379,18 @@
     }
 
     .inner-Hframe {
-        width: min(75vw, 650px);
-        height: auto;
-        aspect-ratio: 800 / 525;
+        width: 380px;
+        height: 280px;
     }
 
     .Utagline {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
         text-align: center;
     }
 
     .Ltagline {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 1.5rem;
         text-align: center;
     }
@@ -445,6 +520,65 @@
     .pricing-card {
         width: 100%;
         max-width: 650px;
+    }
+
+        /* ===== About ===== */
+
+    #aboutSection {
+        padding: 6rem 5%;
+        margin: 2rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .about-image-group {
+        width: 90%;
+        max-width: 750px;
+        min-height: 560px;
+    }
+
+    .about-content {
+        width: 90%;
+        max-width: 700px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 56px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .about-button {
+        align-self: center;
+    }
+
+    .about-sun {
+        width: 150px;
+        height: 150px;
+        right: 5%;
+    }
+
+    .about-cloud {
+        transform: scale(0.8);
+    }
+
+    .cloud-two {
+        right: -80px;
+    }
+
+    .hill-one,
+    .hill-two {
+        width: 600px;
+        height: 280px;
     }
 
 }
@@ -760,6 +894,91 @@
         justify-content: flex-start;
     }
 
+        /* ===== About ===== */
+
+    #aboutSection {
+        padding: 5rem 0;
+        margin: 1.5rem;
+        border-width: 2px;
+        border-radius: 20px;
+    }
+
+    .about-container {
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .about-image-group {
+        width: 92%;
+        min-height: 470px;
+    }
+
+    .about-main-image {
+        width: 82%;
+        height: 430px;
+        border-width: 4px;
+    }
+
+    .about-profile-image {
+        width: 52%;
+        height: 280px;
+        border-width: 5px;
+        bottom: 0;
+    }
+
+    .about-content {
+        width: 90%;
+    }
+
+    .about-title {
+        font-size: 44px;
+        line-height: 0.98;
+    }
+
+    .about-text {
+        margin: 1rem 0;
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .about-sun {
+        width: 110px;
+        height: 110px;
+        top: 5%;
+        right: 3%;
+    }
+
+    .about-cloud {
+        width: 140px;
+        height: 38px;
+    }
+
+    .cloud-one {
+        left: -60px;
+    }
+
+    .cloud-two {
+        right: -70px;
+    }
+
+    .hill-one,
+    .hill-two {
+        width: 450px;
+        height: 220px;
+        bottom: -120px;
+    }
+
+    .about-background::before {
+        width: 55px;
+        height: 55px;
+        border-width: 6px;
+    }
+
+    .about-background::after {
+        width: 35px;
+        height: 35px;
+        border-width: 4px;
+    }
 
 }
 
@@ -1029,11 +1248,18 @@
 
     /* ===== Footer ===== */
 
+
+    #footerSection {
+        justify-content: center;
+    }
+
     .footer-container {
         flex-direction: column;
         height: auto;
         padding: 2rem 1rem;
         gap: 1.5rem;
+        text-align: center;
+
     }
 
     .copyright {
@@ -1058,6 +1284,99 @@
         height: 25px;
     }
 
+        /* ===== About ===== */
+
+    #aboutSection {
+        padding: 4rem 0;
+        margin: 1rem;
+        border-radius: 16px;
+    }
+
+    .about-container {
+        gap: 2.5rem;
+    }
+
+    .about-image-group {
+        width: 94%;
+        min-height: 380px;
+    }
+
+    .about-main-image {
+        width: 84%;
+        height: 350px;
+        border-width: 4px;
+        box-shadow:
+            7px 7px 0 var(--dark-theme-color),
+            0 0 20px rgba(0, 0, 0, 0.35);
+    }
+
+    .about-profile-image {
+        width: 53%;
+        height: 220px;
+        border-width: 4px;
+        box-shadow:
+            7px 7px 0 var(--hover-color),
+            0 0 20px rgba(0, 0, 0, 0.35);
+    }
+
+    .about-content {
+        width: 90%;
+    }
+
+    .about-title {
+        font-size: 34px;
+        line-height: 1;
+    }
+
+    .about-text {
+        font-size: 0.82rem;
+        line-height: 1.65;
+    }
+
+    .about-button {
+        font-size: 0.85rem;
+    }
+
+    .about-sun {
+        width: 80px;
+        height: 80px;
+        top: 4%;
+        right: 2%;
+    }
+
+    .about-cloud {
+        width: 110px;
+        height: 30px;
+    }
+
+    .cloud-one {
+        top: 15%;
+        left: -55px;
+    }
+
+    .cloud-two {
+        top: 42%;
+        right: -60px;
+    }
+
+    .hill-one,
+    .hill-two {
+        width: 350px;
+        height: 170px;
+        bottom: -90px;
+    }
+
+    .about-background::before {
+        width: 42px;
+        height: 42px;
+        border-width: 5px;
+    }
+
+    .about-background::after {
+        width: 28px;
+        height: 28px;
+        border-width: 4px;
+    }
 }
 
 
@@ -1167,6 +1486,7 @@
 
     .pricing-card {
         padding: 1.5rem 1rem;
+        width: auto;
     }
 
     .pricing-package h3 {
@@ -1185,6 +1505,57 @@
         font-size: 0.7rem;
     }
 
+        /* ===== About ===== */
+
+    #aboutSection {
+        padding: 3.5rem 0;
+        margin: 0.75rem;
+    }
+
+    .about-container {
+        gap: 2rem;
+    }
+
+    .about-image-group {
+        width: 96%;
+        min-height: 315px;
+    }
+
+    .about-main-image {
+        width: 86%;
+        height: 290px;
+    }
+
+    .about-profile-image {
+        width: 54%;
+        height: 180px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-text {
+        font-size: 0.76rem;
+        line-height: 1.6;
+    }
+
+    .about-sun {
+        width: 65px;
+        height: 65px;
+    }
+
+    .about-cloud {
+        width: 90px;
+        height: 25px;
+    }
+
+    .hill-one,
+    .hill-two {
+        width: 280px;
+        height: 140px;
+        bottom: -75px;
+    }
 }
 
 
