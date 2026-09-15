@@ -1256,6 +1256,31 @@
         padding: 0.9rem 1.25rem;
         font-size: 0.9rem;
     }
+
+    #portfolioSection {
+        padding-top: 4rem;
+    }
+    .portfolio-container {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .portfolio-content {
+        flex-direction: column;
+        display: flex; 
+        text-align: center;
+        justify-content: center;
+        gap: 20px; 
+        align-items: center;;
+    }
+
+    .portfolio-heading {
+        align-items: center;
+        justify-content: center;;
+    }
 }
 
 

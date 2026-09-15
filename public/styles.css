@@ -64,6 +64,12 @@ h1, h2, h3 {
 }
 
 a {text-decoration: none;}
+
+a, button {
+    cursor: url('./assets/cursors/sonkPointer.png') 8 8, pointer;
+}
+
+
 body {
     /* background-color: var(--secondary-color); */
     background: 
@@ -72,6 +78,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: var(--mono-color);
+    cursor: url('./assets/cursors/sonkCursor.png') 12 12, auto;
 }
 
 
@@ -128,7 +135,7 @@ hr {
     color: var(--ohno-color);
     box-shadow: 4px 4px 0 var(--ohno-color);
     text-decoration: none;
-    cursor: pointer;
+    cursor: url('./assets/cursors/sonkPointer.png') 8 8, pointer;
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease,
@@ -274,7 +281,7 @@ hr {
     padding: 12px 26px;
     border-radius: 20px;
     background: linear-gradient(180deg, #93ddff 0%, #29B6F6 40%, var(--accent-color) 100%);
-    cursor: pointer;
+    cursor: url('./assets/cursors/sonkPointer.png') 8 8, pointer;
     box-shadow: 
         inset 0 2px 4px rgba(255, 255, 255, 0.5),
         inset 0 -4px 6px rgba(0, 0, 0, 0.25),
@@ -399,7 +406,7 @@ hr {
 
 .Utagline {
     font-size: 1.5rem;
-    cursor: default;
+    cursor: url('./assets/cursors/sonkCursor.png') 12 12, auto;
     text-shadow:
         3px 3px 0 #000,
         0 0 20px rgba(255,255,255,.2);
@@ -420,7 +427,7 @@ hr {
     /* text-transform: uppercase; */
     animation: blinking 1.5s ease-in-out infinite;
     margin-top: 2rem;
-    cursor: default; 
+    cursor: url('./assets/cursors/sonkCursor.png') 12 12, auto;
     text-align: center;
 }
 
@@ -440,7 +447,7 @@ hr {
     justify-content: center;
     border-radius: 8px; 
     letter-spacing: 0.15rem;
-    cursor: pointer; 
+    cursor: url('./assets/cursors/sonkPointer.png') 8 8, pointer;
     transition: all 0.225s ease-in-out;
     clip-path: polygon(
         5% 0%, 
@@ -611,7 +618,7 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 
 .services-text span {
     color: var(--hover-color);
-    cursor: help;
+    cursor: url('./assets/cursors/sonkHelp.png') 12 12, help;
     transition: color 0.3s ease-in-out;
 }
 
@@ -3168,7 +3175,7 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 }
 
 .contact-icon {
-    cursor: default;
+    cursor: url('./assets/cursors/sonkCursor.png') 12 12, auto;
 }
 
 
@@ -3853,7 +3860,7 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
 
 .about-text span a, .about-text span {
     color: var(--hover-color);
-    cursor: pointer;
+    cursor: url('./assets/cursors/sonkPointer.png') 8 8, pointer;
     transition: color 0.3s ease-in-out;
 }
 
@@ -3861,9 +3868,7 @@ body:has(.Rbanner-set .banner:hover) .nav-links a::after {
     color: var(--tertiary-theme-color)
 }
 
-.about-text span:hover {
-    cursor: default;
-}
+
 
 
 /* =======================================
