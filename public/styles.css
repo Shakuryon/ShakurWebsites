@@ -6107,6 +6107,10 @@ color:
         box-shadow 0.4s ease;
 }
 
+.portfolio-card:nth-child(even) .portfolio-card-screen{
+    transform: rotate(2deg)
+}
+
 .portfolio-card:hover .portfolio-card-screen {
     transform:
         rotate(0deg)
