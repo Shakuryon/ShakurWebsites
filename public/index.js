@@ -12,4 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
             mainNav.classList.remove('scrolled');
         }
     })
+
+    const title = document.title;
+    let i = 0;
+
+    function typeTitle() {
+        document.title = title.slice(0, i++);
+        if (i <= title.length) {
+            setTimeout(typeTitle, 95);
+        }
+    }
+
+    typeTitle();
 })
